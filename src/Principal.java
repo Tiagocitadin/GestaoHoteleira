@@ -16,7 +16,7 @@ public class Principal {
 
         System.out.println("Protótipo de Aplicação para Gestão Hoteleira");
 
-    //AcomodacaoTest acomodacaoTest = new AcomodacaoTest();
+    AcomodacaoTest acomodacaoTest = new AcomodacaoTest();
       // System.out.println(acomodacaoTest.acomodacaoCadastro("Chalezinho", 5.00, 2, "Pequeno"));
         // System.out.println(acomodacaoTest.acomodacaoCadastro("Chalezinho", 5.00, 2, ""));
         // System.out.println(acomodacaoTest.acomodacaoCadastro("Chalezinho", 5.00, 2, "  "));
