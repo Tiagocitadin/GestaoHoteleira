@@ -22,7 +22,7 @@ public class MidiaAcomodacaoController {
             return "[ERRO] Id não pode ser nulo";
         }
         if (acomodacaoDAO.selecionarPorId(idAcomodacao) == null) {
-            return "[ERRO] Não encontrada. Acomodação não excluída!";
+            return "[ERRO] Não encontrada. Acomodação não cadastrada!";
         }
         if (nome.trim().equals("")) {
             return "Campo descrição obrigatório!";

@@ -80,21 +80,7 @@ public class MidiaAcomodacaoDAO {
             return false;
         }
     }
-//    public Boolean atualizarMidia(MidiaAcomodacao midiaAcomodacao) {
-//        try {
-//            String sql = "UPDATE midia_acomodacao SET id_acomodacao = ?, tipo = ?, nome = ?  WHERE id = ?";
-//            PreparedStatement preparacao = ConexaoMySQL.get().prepareStatement(sql);
-//            preparacao.setLong(1, midiaAcomodacao.getAcomodacao().getId());
-//            preparacao.setString(2, String.valueOf(midiaAcomodacao.getTipo()));
-//            preparacao.setString(3, midiaAcomodacao.getNome());
-//            preparacao.setLong(4, midiaAcomodacao.getId());
-//            int contLinhasAfetadas = preparacao.executeUpdate();
-//            return contLinhasAfetadas > 0;
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//            return false;
-//        }
-//    }
+
 
     public Acomodacao selecionarMidiaPorId(Long id) {
         try {
@@ -121,30 +107,7 @@ public class MidiaAcomodacaoDAO {
         }
         return null;
     }
-//    public Acomodacao selecionarMidiaPorId(Long id) {
-//        try {
-//            String sql = "SELECT * FROM midia_acomodacao WHERE id = ?";
-//            PreparedStatement preparacao = ConexaoMySQL.get().prepareStatement(sql);
-//            preparacao.setLong(1, id);
-//            ResultSet resultado = preparacao.executeQuery();
-//
-//            AcomodacaoDAO acomodacaoDAO = new AcomodacaoDAO();
-//            Acomodacao acomodacao = acomodacaoDAO.selecionarPorId(resultado.getLong("id_acomodacao"));
-//            if(resultado.next()) {
-//                MidiaAcomodacao midiaAcomodacao = new MidiaAcomodacao(
-//                        resultado.getLong("id"),
-//                        acomodacao,
-//                        TipoMidia.fromString(resultado.getString("tipo")),
-//                        resultado.getString("nome")
-//
-//                );
-//                return midiaAcomodacao.getAcomodacao();
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
+
 public Boolean deletarMidia(Long id) {
     try {
         String sql = "DELETE FROM midia_acomodacao WHERE id = ?";

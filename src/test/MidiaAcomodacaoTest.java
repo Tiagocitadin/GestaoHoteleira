@@ -2,6 +2,7 @@ package test;
 
 import controller.AcomodacaoController;
 import controller.MidiaAcomodacaoController;
+import model.MidiaAcomodacao;
 import model.enums.TipoMidia;
 
 public class MidiaAcomodacaoTest {
@@ -17,11 +18,11 @@ public class MidiaAcomodacaoTest {
         return resposta;
     }
 
-    public String midiaAcomodacaoAlteracao(Long id, AcomodacaoTest acomodacao, TipoMidia tipoMidia, String nome) {
-        MidiaAcomodacaoController midiaAcomodacaoController = new MidiaAcomodacaoController();
-        String resposta = MidiaAcomodacaoController.alterarMidia(id, acomodacao, tipoMidia, nome);
-        return resposta;
-    }
+//    public String midiaAcomodacaoAlteracao(Long id, MidiaAcomodacao midiaAcomodacao, TipoMidia tipoMidia, String nome) {
+//        MidiaAcomodacaoController midiaAcomodacaoController = new MidiaAcomodacaoController();
+//        String resposta = MidiaAcomodacaoController.alterarMidia(id, midiaAcomodacao, tipoMidia, nome);
+//        return resposta;
+//    }
     public String midiaAcomodacaoExclusao(Long id) {
         MidiaAcomodacaoController midiaAcomodacaoController = new MidiaAcomodacaoController();
         String resposta = midiaAcomodacaoController.excluirMidia(id);
